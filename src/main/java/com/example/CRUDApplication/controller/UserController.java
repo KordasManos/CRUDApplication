@@ -78,7 +78,7 @@ public class UserController {
         }
     }
 
-    @PostMapping("/updateUserById/{id}")
+    @PutMapping("/updateUserById/{id}")
     public ResponseEntity<User> updateUserById(@PathVariable Long id, @RequestBody User newUserData) {
         try {
             Optional<User> oldUserData = userRepo.findById(id);
