@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "e101105d-238c-4923-b965-486a735a45ba",
+		"name": "CRUD User Application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17938586",
+		"_collection_link": "https://cloudy-resonance-135840.postman.co/workspace/My-Workspace~f89de51b-d541-4e17-88e2-1b8d523b59d2/collection/17938586-e101105d-238c-4923-b965-486a735a45ba?action=share&creator=17938586&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "getAllUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/getAllUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSpecificUsersById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/getAllUsers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserById/{id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/getUserById/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"getUserById",
+						"3"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"User1\",\r\n    \"email\": \"user1@gmail.com\",\r\n    \"firstName\": \"firstName1\",\r\n    \"lastName\": \"lastName1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/addUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUserById/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"User2\",\r\n    \"email\": \"user2@gmail.com\",\r\n    \"firstName\": \"firstName2\",\r\n    \"lastName\": \"lastName2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/updateUserById/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"updateUserById",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUserById/{id{}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/deleteUserById/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"deleteUserById",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUsersByIds",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    2,\r\n    3\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/deleteUsersByIds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"deleteUsersByIds"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
